@@ -2,12 +2,13 @@
 //    FILE: DS28CM00.cpp
 //  AUTHOR: Rob Tillaart
 // PURPOSE: Library for the DS28CM00 unique identification chip.
-// VERSION: 0.2.0
+// VERSION: 0.2.1
 //     URL: https://github.com/RobTillaart/DS28CM00
 //
 // HISTORY:
 // 0.1.0  2017-07-15 initial version
 // 0.2.0  2020-04-11 refactor, #pragma once, ESP support, multiple Wire, ESP support (start)
+// 0.2.1  2020-06-07 fix library.json
 //
 
 #include "DS28CM00.h"

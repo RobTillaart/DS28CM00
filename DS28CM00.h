@@ -3,16 +3,14 @@
 //    FILE: DS28CM00.h
 //  AUTHOR: Rob Tillaart
 // PURPOSE: Library for the DS28CM00 unique identification chip.
-// VERSION: 0.2.0
+// VERSION: 0.2.1
 // HISTORY: See DS28CM00.cpp
 //     URL: https://github.com/RobTillaart/DS28CM00
-//
-// Released to the public domain
 //
 
 #include <Wire.h>
 
-#define DS28CM00_LIB_VERSION      "0.2.0"
+#define DS28CM00_LIB_VERSION      "0.2.1"
 #define DS28CM00_I2C_MODE         0x00
 #define DS28CM00_SMBUS_MODE       0x01
 

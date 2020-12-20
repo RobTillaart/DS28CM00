@@ -18,11 +18,6 @@
 #define DS28CM00_CONTROLREGISTER    0x08
 
 
-DS28CM00::DS28CM00()
-{
-  DS28CM00(Wire);
-}
-
 DS28CM00::DS28CM00(TwoWire *wire)
 {
   _wire = wire;

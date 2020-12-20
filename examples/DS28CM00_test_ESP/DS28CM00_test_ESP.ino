@@ -15,7 +15,11 @@
 
 uint8_t uid[8];
 
+#if defined(ESP32) || defined(ESP8266)
 DS28CM00 DS28(10, 12);      // ESP32 I2C pins (choice)
+#else
+DS28CM00 DS28(&Wire));
+#endif
 
 void setup()
 {

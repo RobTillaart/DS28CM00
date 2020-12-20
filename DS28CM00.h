@@ -18,7 +18,6 @@
 class DS28CM00
 {
 public:
-  explicit DS28CM00();
   explicit DS28CM00(TwoWire *wire);
 #if defined(ESP8266) || defined(ESP32)
   explicit DS28CM00(const uint8_t dataPin, const uint8_t clockPin);

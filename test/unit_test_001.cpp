@@ -27,7 +27,7 @@
 #define assertEqualINF(arg)  assertOp("assertEqualINF", "expected", INFINITY, compareEqual, "==", "actual", arg)
 #define assertEqualNAN(arg)  assertOp("assertEqualNAN", "expected", true, compareEqual, "==", "actual", isnan(arg))
 
-
+#include "Wire.h"
 #include "DS28CM00.h"
 
 
@@ -43,7 +43,7 @@ unittest_teardown()
 unittest(test_constructor)
 {
   uint8_t   uid[8];
-  DS28CM00  DS28;
+  DS28CM00  DS28(&Wire);
   
   DS28.begin();
   uint8_t mode;

@@ -51,11 +51,11 @@ unittest(test_constructor)
   assertFalse(DS28.getMode(mode));           // not connected...
   assertEqual(DS28CM00_MODE_UNKNOWN, mode);
   
-  assertFalse(DS28.setSMBusMode());
+  assertTrue(DS28.setSMBusMode());           // apparently 
   assertFalse(DS28.getMode(mode));
   assertEqual(DS28CM00_MODE_UNKNOWN, mode);
   
-  assertFalse(DS28.setI2CMode());
+  assertTrue(DS28.setI2CMode());
   assertFalse(DS28.getMode(mode));
   assertEqual(DS28CM00_MODE_UNKNOWN, mode);
 }

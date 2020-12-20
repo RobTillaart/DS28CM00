@@ -10,12 +10,12 @@
 #include <Wire.h>
 #include <DS28CM00.h>
 
-#include <rom/crc.h>	// ESP32 specific
+#include <rom/crc.h>        // ESP32 specific
 
 
 uint8_t uid[8];
 
-DS28CM00 DS28(10, 12);
+DS28CM00 DS28(10, 12);      // ESP32 I2C pins (choice)
 
 void setup()
 {

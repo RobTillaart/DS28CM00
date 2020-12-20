@@ -46,15 +46,18 @@ unittest(test_constructor)
   DS28CM00  DS28;
   
   DS28.begin();
-  assertEqual(DS28CM00_I2C_MODE, DS28.getMode());
+  uint8_t mode;
+  
+  assertTrue(DS28.getMode(&mode));
+  assertEqual(DS28CM00_I2C_MODE, mode);
   
   DS28.setSMBusMode();
-  assertEqual(DS28CM00_SMBUS_MODE, DS28.getMode());
+  assertTrue(DS28.getMode(&mode));
+  assertEqual(DS28CM00_SMBUS_MODE, mode);
   
   DS28.setI2CMode();
-  assertEqual(DS28CM00_I2C_MODE, DS28.getMode());
- 
-  assertFalse(S28.getUID(uid););
+  assertTrue(DS28.getMode(&mode));
+  assertEqual(DS28CM00_I2C_MODE, mode);
 }
 
 unittest_main()

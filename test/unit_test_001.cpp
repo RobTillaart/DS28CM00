@@ -48,16 +48,16 @@ unittest(test_constructor)
   DS28.begin();
   uint8_t mode;
   
-  assertTrue(DS28.getMode(mode));
-  assertEqual(DS28CM00_I2C_MODE, mode);
+  assertFalse(DS28.getMode(mode));           // not connected...
+  assertEqual(DS28CM00_MODE_UNKNOWN, mode);
   
-  DS28.setSMBusMode();
-  assertTrue(DS28.getMode(mode));
-  assertEqual(DS28CM00_SMBUS_MODE, mode);
+  assertFalse(DS28.setSMBusMode());
+  assertFalse(DS28.getMode(mode));
+  assertEqual(DS28CM00_MODE_UNKNOWN, mode);
   
-  DS28.setI2CMode();
-  assertTrue(DS28.getMode(mode));
-  assertEqual(DS28CM00_I2C_MODE, mode);
+  assertFalse(DS28.setI2CMode());
+  assertFalse(DS28.getMode(mode));
+  assertEqual(DS28CM00_MODE_UNKNOWN, mode);
 }
 
 unittest_main()

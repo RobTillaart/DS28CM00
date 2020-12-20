@@ -14,6 +14,7 @@
 #define DS28CM00_LIB_VERSION      "0.2.2"
 #define DS28CM00_I2C_MODE         0x00
 #define DS28CM00_SMBUS_MODE       0x01
+#define DS28CM00_MODE_UNKNOWN     0xFF
 
 class DS28CM00
 {

@@ -56,6 +56,7 @@ bool DS28CM00::setMode(uint8_t mode)
 
 bool DS28CM00::getMode(uint8_t &mode)
 {
+  mode = DS28CM00_MODE_UNKNOWN;
   _wire->beginTransmission(DS28CM00_DEVICEADDRESS);
   _wire->write(DS28CM00_CONTROLREGISTER);
   int rv = _wire->endTransmission();
@@ -65,7 +66,6 @@ bool DS28CM00::getMode(uint8_t &mode)
   if (read < 1) return false;
 
   mode = _wire->read();
-
   return true;
 }
 

@@ -1,7 +1,7 @@
 //
 //    FILE: DS28CM00_perf.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.2.0
+// VERSION: 0.2.2
 // PURPOSE: performance test DS28CM00 lib
 //    DATE: 2017-07-24
 //     URL: https://github.com/RobTillaart/DS28CM00

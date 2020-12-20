@@ -1,7 +1,7 @@
 //
 //    FILE: DS28CM00_test.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.3.0
+// VERSION: 0.2.2
 // PURPOSE: test DS28CM00 lib
 //    DATE: 2017-07-15
 //     URL: https://github.com/RobTillaart/DS28CM00

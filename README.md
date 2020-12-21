@@ -1,3 +1,9 @@
+
+[![Arduino CI](https://github.com/RobTillaart/DS28CM00/workflows/Arduino%20CI/badge.svg)](https://github.com/marketplace/actions/arduino_ci)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RobTillaart/DS28CM00/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/RobTillaart/DS28CM00.svg?maxAge=3600)](https://github.com/RobTillaart/DS28CM00/releases)
+
+
 # DS28CM00
 
 Arduino library for I2C DS28CM00 unique identification chip.  \[48 bit\]

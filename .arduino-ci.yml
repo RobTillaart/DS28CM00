@@ -6,6 +6,6 @@ compile:
     - due
     - zero
 
-  reject:
-    - "DS28CM00_test.ino"
-    - "DS28CM00_test_ESP.ino"
+reject:
+  - "DS28CM00_test.ino"
+  - "DS28CM00_test_ESP.ino"

@@ -24,7 +24,6 @@ The DS28CM00 can work in 2 modes, I2C and SMBus mode. check datasheet for detail
 
 ### Constructor
 
-- **DS28CM00()**
 - **DS28CM00(TwoWire \*wire)**
 - **DS28CM00(dataPin, clockPin)** ESP32, ESP8266
 

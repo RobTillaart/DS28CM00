@@ -60,7 +60,7 @@ unittest(test_constructor_I)
 unittest(test_constructor_II)
 {
   uint8_t   uid[8];
-  DS28CM00  DS28();     // use default Wire
+  DS28CM00  DS28;     // use default Wire
 
   DS28.begin();
   uint8_t mode;

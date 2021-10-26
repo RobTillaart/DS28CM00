@@ -59,6 +59,7 @@ unittest(test_constructor_I)
 
 unittest(test_constructor_II)
 {
+  fprintf(stderr, "DS28CM00_LIB_VERSION: %s\n", (char *) DS28CM00_LIB_VERSION);
   uint8_t   uid[8];
   DS28CM00  DS28;     // use default Wire
 

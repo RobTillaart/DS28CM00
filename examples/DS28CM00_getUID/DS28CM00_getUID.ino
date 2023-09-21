@@ -28,7 +28,7 @@ void setup()
   //  read different sizes.
   for (uint8_t size = 1; size < 9; size++)
   {
-    bool b = DS28.getUID(uid, size);
+    DS28.getUID(uid, size);
     Serial.print(size);
     Serial.print("\tUID:\t");
     for (uint8_t i = 0; i < size; i++)

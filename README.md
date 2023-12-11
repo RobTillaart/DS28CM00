@@ -30,6 +30,15 @@ as bonus.
 The DS28CM00 can work in 2 modes, I2C and SMBus mode. Check datasheet for details.
 
 
+#### 0.4.0 Breaking change
+
+Version 0.4.0 introduced a breaking change.
+You cannot set the pins in **begin()** any more.
+This reduces the dependency of processor dependent Wire implementations.
+The user has to call **Wire.begin()** and can optionally set the Wire pins 
+before calling **begin()**.
+
+
 #### Related
 
 - https://github.com/RobTillaart/UUID

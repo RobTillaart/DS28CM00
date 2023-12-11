@@ -2,7 +2,7 @@
 //    FILE: DS28CM00.cpp
 //  AUTHOR: Rob Tillaart
 // PURPOSE: Library for the DS28CM00 unique identification chip.
-// VERSION: 0.3.1
+// VERSION: 0.4.0
 //     URL: https://github.com/RobTillaart/DS28CM00
 
 
